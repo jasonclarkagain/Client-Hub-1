@@ -5,6 +5,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { Layout } from "@/components/layout";
 import { Dashboard } from "@/pages/dashboard";
+import { ProjectsList } from "@/pages/projects-list";
+import { ProjectNew } from "@/pages/project-new";
+import { ProjectDetail } from "@/pages/project-detail";
+import { ProjectEdit } from "@/pages/project-edit";
 
 const queryClient = new QueryClient();
 
@@ -13,10 +17,10 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Dashboard} />
-        {/* <Route path="/projects" component={ProjectsList} /> */}
-        {/* <Route path="/projects/new" component={ProjectNew} /> */}
-        {/* <Route path="/projects/:id" component={ProjectDetail} /> */}
-        {/* <Route path="/projects/:id/edit" component={ProjectEdit} /> */}
+        <Route path="/projects" component={ProjectsList} />
+        <Route path="/projects/new" component={ProjectNew} />
+        <Route path="/projects/:id" component={ProjectDetail} />
+        <Route path="/projects/:id/edit" component={ProjectEdit} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
