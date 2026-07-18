@@ -48,8 +48,8 @@ router.post("/projects/:id/messages", async (req, res): Promise<void> => {
     .values({
       projectId: params.data.id,
       content: parsed.data.content,
-      authorName: parsed.data.authorName,
-      authorRole: parsed.data.authorRole as "client" | "designer",
+      authorName: "Client",
+      authorRole: "client",
     })
     .returning();
 

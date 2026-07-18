@@ -411,16 +411,11 @@ components:
 
     MessageInput:
       type: object
-      required: [content, authorName, authorRole]
+      required: [content]
       properties:
         content:
           type: string
           minLength: 1
-        authorName:
-          type: string
-        authorRole:
-          type: string
-          enum: [client, designer]
 
     DashboardSummary:
       type: object

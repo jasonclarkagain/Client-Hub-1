@@ -16,7 +16,6 @@ export * from './listProjectsStatus';
 export * from './message';
 export * from './messageAuthorRole';
 export * from './messageInput';
-export * from './messageInputAuthorRole';
 export * from './project';
 export * from './projectFile';
 export * from './projectInput';

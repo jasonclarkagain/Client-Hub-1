@@ -142,19 +142,9 @@ export interface Message {
   createdAt: string;
 }
 
-export type MessageInputAuthorRole = typeof MessageInputAuthorRole[keyof typeof MessageInputAuthorRole];
-
-
-export const MessageInputAuthorRole = {
-  client: 'client',
-  designer: 'designer',
-} as const;
-
 export interface MessageInput {
   /** @minLength 1 */
   content: string;
-  authorName: string;
-  authorRole: MessageInputAuthorRole;
 }
 
 export interface DashboardSummary {

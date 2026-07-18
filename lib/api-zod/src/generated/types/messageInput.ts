@@ -5,11 +5,8 @@
  * Client portal API for freelance design business
  * OpenAPI spec version: 0.1.0
  */
-import type { MessageInputAuthorRole } from './messageInputAuthorRole';
 
 export interface MessageInput {
   /** @minLength 1 */
   content: string;
-  authorName: string;
-  authorRole: MessageInputAuthorRole;
 }

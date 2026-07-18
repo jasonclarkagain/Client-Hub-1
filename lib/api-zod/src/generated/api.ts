@@ -192,9 +192,7 @@ export const CreateMessageParams = zod.object({
 
 
 export const CreateMessageBody = zod.object({
-  "content": zod.string().min(1),
-  "authorName": zod.string(),
-  "authorRole": zod.enum(['client', 'designer'])
+  "content": zod.string().min(1)
 })
 
 
