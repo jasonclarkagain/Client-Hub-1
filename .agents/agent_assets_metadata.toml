@@ -1,0 +1,9 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "AFxI_944HUMvYPqiKpOg2"
+uri = "file://client-portal-project.zip"
+type = "unspecified"
+title = "Client Portal Project Source"
+description = "ZIP archive containing the complete project source code, shared libraries, generated API code, configuration, and artifact metadata. Dependencies, caches, Git internals, and environment files are excluded."
